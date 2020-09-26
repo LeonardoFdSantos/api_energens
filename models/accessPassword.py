@@ -4,7 +4,7 @@ class AccessPasswordModel(banco.Model):
     __tablename__ = 'accessPassword'
 
     id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
-    customer = banco.Column(banco.String(80))
+    customer = banco.Column(banco.String(80), primary_key=True)
     portal = banco.Column(banco.String(255))
     user = banco.Column(banco.String(255))
     password = banco.Column(banco.String(255))
