@@ -3,7 +3,7 @@ from flask_restful import Api
 from resources.consolidated import Consolidated, Funded
 from resources.inverter import Inverters, Inverter
 from resources.customerRegistration import CustomerRegistration, CustomerRegistrations
-from resources.AccessPasswords import AccessPassword, AccessPasswords
+from resources.accessPassword import AccessPassword, AccessPasswords
 from resources.internetPasswords import InternetPassword, InternetPasswords
 from resources.cleanings import Cleaning, Cleanings
 from resources.localIrradiation import LocalIrradiation, LocationsIrradiation
