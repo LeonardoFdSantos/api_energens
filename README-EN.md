@@ -125,4 +125,77 @@ The model, creates the name database, "internetPasswords" with the following fie
 
 The "InternetPasswords" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
 
-The "InternetPassword" class has the functions "get", "post", "put" and "
+The "InternetPassword" class has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
+
+6. [Inverter registration model](models/inverter.py) and [Inverter registration resources](resources/inverter.py)
+
+The model, creates the name database, "inverters" with the following fields:
+
+   - id
+   - customer
+   - numberInverters
+   - inverter01
+   - inverter02
+   - invert03
+   - inverter04
+   - invert05
+
+#### Resources
+
+The "Inverters" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
+
+The "Inverter" class has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
+
+7. [Local irradiation model](models/localIrradiation.py) and [Local irradiation resources](resources/localIrradiation.py)
+
+The model, creates the name database, "localIrradiation" with the following fields:
+
+   - city
+   - january
+   - february
+   - march
+   - april
+   - may
+   - join
+   - july
+   - august
+   - september
+   - october
+   - november
+   - december
+   - average
+
+#### Resources
+
+The class "LocationsIrradiation" with its only function "get", searches the entire table and returns by separation in JSON format.
+
+The class "LocalIrradiation" has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
+
+8. [Generation forecast model](models/predicted.py) and [Generation forecast resources](resources/predicted.py)
+
+The model, creates the name database, "provided" with the following fields:
+
+   - id
+   - customer
+   - effectiveness
+   - powerTotal
+   - local
+   - january
+   - february
+   - march
+   - april
+   - may
+   - join
+   - july
+   - august
+   - september
+   - october
+   - november
+   - december
+   - average
+
+#### Resources
+
+The "Predicted" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
+
+The class "Provided" has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
