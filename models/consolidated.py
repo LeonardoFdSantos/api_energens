@@ -2,7 +2,7 @@ from sql_alchemy import banco
 
 
 class ConsolidatedModel(banco.Model):
-    __tablename__ = 'consolidados'
+    __tablename__ = 'consolidated'
 
     id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
     customer = banco.Column(banco.String(80))

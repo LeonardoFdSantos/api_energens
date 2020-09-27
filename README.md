@@ -60,17 +60,145 @@ A classe "AccessPassword" possui as funções "get", "post", "put" e "delete", q
    
 2. [Modelo de Limpezas](models/cleanings.py) e [Recursos da Limpeza](resources/cleanings.py)
 
+#### Modelo
+
+O modelo, cria o banco de dados de nome, "cleanings" com os seguintes campos:
+
+   - id
+   - customer
+   - date
+   - nextDate
+   - maximumTime
+
+#### Recursos
+
+A classe "Cleanings" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "Cleaning" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
+
 3. [Modelo do consolidados](models/consolidated.py) e [Recursos do consolidados](resources/consolidated.py)
+
+O modelo, cria o banco de dados de nome, "consolidated" com os seguintes campos:
+
+   - id
+   - customer
+   - projectNumber
+   - modulesNumber
+   - modulesPower
+   - powerTotal
+   - effectiveness
+   - delivered
+   - local
+
+#### Recursos
+
+A classe "Consolidated" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "Funded" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
 
 4. [Modelo de Registro de Cliente](models/customerRegistration.py) e [Recursos do registro de clientes](resources/customerRegistration.py)
 
+O modelo, cria o banco de dados de nome, "customerRegistration" com os seguintes campos:
+
+   - id
+   - customer
+   - typeCustomer
+   - CPF_CNPJ
+   - code
+
+#### Recursos
+
+A classe "CustomerRegistrations" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "CustomerRegistration" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
+
 5. [Modelo de registros de senhas da Internet](models/internetPasswords.py) e [Recursos do registros de senhas da Internet](resources/internetPasswords.py)
+
+O modelo, cria o banco de dados de nome, "internetPasswords" com os seguintes campos:
+
+   - id
+   - customer
+   - ssid
+   - password
+
+#### Recursos
+
+A classe "InternetPasswords" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "InternetPassword" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
 
 6. [Modelo de registro de Inversores](models/inverter.py) e [Recursos de registro de Inversores](resources/inverter.py)
 
+O modelo, cria o banco de dados de nome, "inverters" com os seguintes campos:
+
+   - id
+   - customer
+   - numberInverters
+   - inverter01
+   - inverter02
+   - inverter03
+   - inverter04
+   - inverter05
+
+#### Recursos
+
+A classe "Inverters" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "Inverter" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
+
 7. [Modelo de Irradiação local](models/localIrradiation.py) e [Recursos do Irradiação local](resources/localIrradiation.py)
 
+O modelo, cria o banco de dados de nome, "localIrradiation" com os seguintes campos:
+
+   - city
+   - january
+   - february
+   - march
+   - april
+   - may
+   - june
+   - july
+   - august
+   - september
+   - october
+   - november
+   - december
+   - average
+
+#### Recursos
+
+A classe "LocationsIrradiation" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "LocalIrradiation" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
+
 8. [Modelo da previsão de geração](models/predicted.py) e [Recursos da previsão de geração](resources/predicted.py)
+
+O modelo, cria o banco de dados de nome, "provided" com os seguintes campos:
+
+   - id
+   - customer
+   - effectiveness
+   - powerTotal
+   - local
+   - january
+   - february
+   - march
+   - april
+   - may
+   - june
+   - july
+   - august
+   - september
+   - october
+   - november
+   - december
+   - average
+
+#### Recursos
+
+A classe "Predicted" com a sua única função "get", busca toda a tabela e retorna por separação em formato JSON.
+
+A classe "Provided" possui as funções "get", "post", "put" e "delete", qual representa o CRUD deste banco de dados.
 
 
 
