@@ -3,8 +3,8 @@ from sql_alchemy import banco
 class InternetPasswordsModel(banco.Model):
     __tablename__ = 'internetPasswords'
 
-    id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
-    customer = banco.Column(banco.String(80))
+    id = banco.Column(banco.INTEGER, primary_key=True)
+    customer = banco.Column(banco.String(80), primary_key=True)
     ssid = banco.Column(banco.String(255))
     password = banco.Column(banco.String(255))
 

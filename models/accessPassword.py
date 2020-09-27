@@ -3,7 +3,7 @@ from sql_alchemy import banco
 class AccessPasswordModel(banco.Model):
     __tablename__ = 'accessPassword'
 
-    id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
+    id = banco.Column(banco.INTEGER, primary_key=True)
     customer = banco.Column(banco.String(80), primary_key=True)
     portal = banco.Column(banco.String(255))
     user = banco.Column(banco.String(255))

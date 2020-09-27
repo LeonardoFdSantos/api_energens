@@ -4,8 +4,8 @@ from sql_alchemy import banco
 class CustomerRegistrationModel(banco.Model):
     __tablename__ = 'customerRegistration'
 
-    id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
-    customer = banco.Column(banco.String(80))
+    id = banco.Column(banco.INTEGER, primary_key=True)
+    customer = banco.Column(banco.String(80), primary_key=True)
     typeCustomer = banco.Column(banco.String(255))
     CPF_CNPJ = banco.Column(banco.String(45))
     code = banco.Column(banco.String(45))

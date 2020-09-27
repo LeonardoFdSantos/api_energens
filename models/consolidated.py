@@ -4,8 +4,8 @@ from sql_alchemy import banco
 class ConsolidatedModel(banco.Model):
     __tablename__ = 'consolidated'
 
-    id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
-    customer = banco.Column(banco.String(80))
+    id = banco.Column(banco.INTEGER, primary_key=True)
+    customer = banco.Column(banco.String(80), primary_key=True)
     projectNumber = banco.Column(banco.INTEGER)
     modulesNumber = banco.Column(banco.INTEGER)
     modulesPower = banco.Column(banco.Float)

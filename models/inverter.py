@@ -4,8 +4,8 @@ from sql_alchemy import banco
 class InverterModel(banco.Model):
     __tablename__ = 'inverters'
 
-    id = banco.Column(banco.INTEGER, primary_key=True, autoincrement=True)
-    customer = banco.Column(banco.String(80))
+    id = banco.Column(banco.INTEGER, primary_key=True)
+    customer = banco.Column(banco.String(80), primary_key=True)
     numberInverters = banco.Column(banco.INTEGER)
     inverter01 = banco.Column(banco.Float)
     inverter02 = banco.Column(banco.Float)
