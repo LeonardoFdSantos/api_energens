@@ -25,7 +25,7 @@ These methods are basic to all models, a brief explanation of them will be cover
 ### Explanation of features
 
 #### Get
-
+        
 The "get" function is to return a specific "id" or "city" with the entire set of information.
 
 #### Post
@@ -37,35 +37,92 @@ The "post" has the means of posting a new request in the system, following its p
 The "put" has the function of updating an existing "id" or "city".
 
 #### Delete
-    
+
 The "delete" function is to delete the selected "id" or "city".
 
 1. [Access password template](models/accessPassword.py) and [Access password features](resources/accessPassword.py)
-
-    #### Model
     
-    The model, creates the database with the following fields:
-  
-       - id
-       - customer
-       - portal
-       - user
-       - password
-   
-   #### Resources
-   
-   
+#### Model
 
+The model creates the database named "accessPassword" with the following fields:
+
+   - id
+   - customer
+   - portal
+   - user
+   - password
+
+#### Resources
+
+The "AccessPasswords" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
+
+The class "AccessPassword" has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
+   
 2. [Cleaning Model](models/cleanings.py) and [Cleaning Resources](resources/cleanings.py)
+
+#### Model
+
+The model, creates the name database, "cleanings" with the following fields:
+
+   - id
+   - customer
+   - gives you
+   - nextDate
+   - maximumTime
+
+#### Resources
+
+The "Cleanings" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
+
+The "Cleaning" class has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
 
 3. [Consolidated model](models/consolidated.py) and [Consolidated resources](resources/consolidated.py)
 
+The model, creates the name database, "consolidated" with the following fields:
+
+   - id
+   - customer
+   - projectNumber
+   - modulesNumber
+   - modulesPower
+   - powerTotal
+   - effectiveness
+   - delivered
+   - local
+
+#### Resources
+
+The "Consolidated" class with its only "get" function, searches the entire table and returns by separation in JSON format.
+
+The "Funded" class has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
+
 4. [Customer Registration Template](models/customerRegistration.py) and [Customer Registration Resources](resources/customerRegistration.py)
+
+The model creates the database named "customerRegistration" with the following fields:
+
+   - id
+   - customer
+   - typeCustomer
+   - CPF_CNPJ
+   - code
+
+#### Resources
+
+The "CustomerRegistrations" class with its single "get" function, searches the entire table and returns by separation in JSON format.
+
+The "CustomerRegistration" class has the functions "get", "post", "put" and "delete", which represents the CRUD of this database.
 
 5. [Internet password record template](models/internetPasswords.py) and [Internet password record resource](resources/internetPasswords.py)
 
-6. [Inverter registration model](models/inverter.py) and [Inverter registration resources](resources/inverter.py)
+The model, creates the name database, "internetPasswords" with the following fields:
 
-7. [Local irradiation model](models/localIrradiation.py) and [Local irradiation resources](resources/localIrradiation.py)
+   - id
+   - customer
+   - ssid
+   - password
 
-8. [Generation forecast model](models/predicted.py) and [Generation forecast resources](resources/predicted.py)
+#### Resources
+
+The "InternetPasswords" class with its unique "get" function, searches the entire table and returns by separation in JSON format.
+
+The "InternetPassword" class has the functions "get", "post", "put" and "
