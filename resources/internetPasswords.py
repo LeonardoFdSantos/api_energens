@@ -6,7 +6,7 @@ class InternetPasswords(Resource):
 
     def get(self):
         return {
-            'Internet Password': [internetPassword.json() for internetPassword in InternetPasswordsModel.query.all()]
+            'InternetPassword': [internetPassword.json() for internetPassword in InternetPasswordsModel.query.all()]
         }
 
 

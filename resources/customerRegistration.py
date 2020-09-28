@@ -5,7 +5,7 @@ from models.customerRegistration import CustomerRegistrationModel
 class CustomerRegistrations(Resource):
 
     def get(self):
-        return {'Customer Registration': [customerRegistration.json() for customerRegistration in
+        return {'CustomerRegistration': [customerRegistration.json() for customerRegistration in
                                           CustomerRegistrationModel.query.all()]}
 
 

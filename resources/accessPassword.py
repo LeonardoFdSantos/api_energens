@@ -5,7 +5,7 @@ from models.accessPassword import AccessPasswordModel
 class AccessPasswords(Resource):
 
     def get(self):
-        return {'Access Passwords': [accessPassword.json() for accessPassword in AccessPasswordModel.query.all()]}
+        return {'AccessPasswords': [accessPassword.json() for accessPassword in AccessPasswordModel.query.all()]}
 
 class AccessPassword(Resource):
 

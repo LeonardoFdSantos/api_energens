@@ -1,7 +1,7 @@
 from sql_alchemy import banco
 
 class LocalIrradiationModel(banco.Model):
-    __tablename__ = 'localIrradiation'
+    __tablename__ = 'localirradiation'
 
     city = banco.Column(banco.String(80), primary_key=True)
     january = banco.Column(banco.Float)

@@ -1,7 +1,7 @@
 from sql_alchemy import banco
 
 class InternetPasswordsModel(banco.Model):
-    __tablename__ = 'internetPasswords'
+    __tablename__ = 'internetpasswords'
 
     id = banco.Column(banco.INTEGER, primary_key=True)
     customer = banco.Column(banco.String(80), primary_key=True)

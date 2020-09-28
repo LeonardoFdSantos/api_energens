@@ -5,7 +5,7 @@ from models.localIrradiation import LocalIrradiationModel
 class LocationsIrradiation(Resource):
 
     def get(self):
-        return {'Local Irradiation': [localIrradiation.json() for localIrradiation in LocalIrradiationModel.query.all()]}
+        return {'LocalIrradiation': [localIrradiation.json() for localIrradiation in LocalIrradiationModel.query.all()]}
 
 class LocalIrradiation(Resource):
 
